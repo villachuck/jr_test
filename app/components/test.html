@@ -1,0 +1,107 @@
+<nav class="navbar navbar-light bg-light" style="background-color:#4D8B40;width:100%;height:70px;margin:0;border-radius:0 !important;">
+    <div class="container-fluid" style="background-color:#4D8B40;width:100%;height:70px;margin:0;">
+        <div class="col-md-6">
+            <img src="https://scontent.fmex3-1.fna.fbcdn.net/v/t1.0-9/44905866_1861076210608524_703638427609858048_n.jpg?_nc_cat=104&_nc_ht=scontent.fmex3-1.fna&oh=1825a3dee8483f5a6e653c8898c59b03&oe=5C461798" width="130" height="70" alt="cko-logo">
+        </div>
+        <div class="col-md-6" style="padding-top:20px;" align="right">
+            <h4 style="color:white;">Carlos Villavicencio Aguila</h4>
+        </div>
+    </div>
+</nav>
+<br>
+<div class="col-lg-12">
+
+    <div class="col-lg-6">
+        <div class="card" style="background-color:white;">
+            <div class="card-body">
+                <h4><strong>Ejercicio 1</strong></h4>
+                <br>
+                <div class="col-lg-4"><strong>Ingresa un número</strong>
+                    <input type="text" class="form-control" id="number" />
+                </div>
+                <div class="col-lg-6"><strong>Ingresa números separados por coma</strong>
+                    <input type="text" class="form-control" id="numberPerComa" />
+                </div>
+                <div class="col-lg-2"><br>
+                    <button type="button" class="btn btn-rotate" ng-click="rotate()">Rotar</button>
+                </div>
+                <br><br><br><br>
+                <div class="col-lg-12">
+                    <strong>Resultado:</strong> {{result}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card" style="background-color:white;">
+            <div class="card-body" >
+                <h4><strong>Ejercicio 2</strong></h4>
+                <br>
+                <div class="col-lg-5"><strong>Ingresar primera palabra</strong>
+                    <input type="text" class="form-control" id="firstWord" style="width:100%" />
+                </div>
+                <div class="col-lg-5"><strong>Ingresar segunda palabra</strong>
+                    <input type="text" class="form-control" id="secondWord" style="width:100%" />
+                </div>
+                <div class="col-lg-2"><br>
+                    <button type="button" class="btn btn-rotate" ng-click="validate()">Validar</button>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="lessThan">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" align="center">
+                <strong><p>La cantidad debe ser mayor o igual a cero</p></strong>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="noAnagram">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" align="center">
+                <strong><p>No es un anagrama</p></strong>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="isAnagram">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" align="center">
+                <strong><p>Es un anagrama</p></strong>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="toBeAnagram">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" align="center">
+                <strong><p>No es un anagrama y se deben eliminar {{characterNumber}} carateres para que sea un anagrama</p></strong>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

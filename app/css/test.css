@@ -1,0 +1,70 @@
+body {
+    background-color: #F1F1F1;
+}
+
+.card{
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #CCC;
+}
+
+.card-body {
+    padding: 5px;
+    height: 200px;
+}
+
+.btn-rotate {
+    background-color: #4D8B40;
+    border-color: #4D8B40;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-rotate:hover {
+    background-color: #1c5d15;
+    border-color: #1c5d15;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-rotate:active {
+    background-color: #1c5d15;
+    border-color: #1c5d15;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-rotate:focus {
+    background-color: #1c5d15;
+    border-color: #1c5d15;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: #919395;
+    border-color: #919395;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #565656;
+    border-color: #565656;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-secondary:focus {
+    background-color: #565656;
+    border-color: #565656;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-secondary:active {
+    background-color: #565656;
+    border-color: #565656;
+    color: white;
+    font-weight: bold;
+}
